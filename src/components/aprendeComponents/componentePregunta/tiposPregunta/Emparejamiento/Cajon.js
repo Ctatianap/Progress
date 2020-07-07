@@ -3,7 +3,8 @@ import { useDrop } from "react-dnd";
 import Respuesta from "./Respuesta";
 
 const Cajon = ({ respuesta, onDrag, onDrop }) => {
-  const [{}, drop] = useDrop({
+  // eslint-disable-next-line no-unused-vars
+  const [_, drop] = useDrop({
     accept: "1",
     canDrop: () => true,
     drop: onDrop,

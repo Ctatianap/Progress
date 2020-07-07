@@ -4,9 +4,9 @@ import { Context } from "../../../../components/contexto";
 import axios from "axios";
 
 const Ganador = () => {
-  const { globalContext, setGlobalContext } = useContext(Context);
+  const { globalContext } = useContext(Context);
   const { progresoNivel, setProgresoNivel } = useContext(Context);
-  const { experiencia, setExperiencia } = useContext(Context);
+  const { experiencia } = useContext(Context);
 
   useEffect(() => {
     axios

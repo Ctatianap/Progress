@@ -4,7 +4,7 @@ import data from "../../assets/data.json";
 import { Context } from "../contexto";
 
 const ContenedorNiveles = () => {
-  const { progresoNivel, setProgresoNivel } = useContext(Context);
+  const { progresoNivel } = useContext(Context);
 
   let niveles = data.map((nivel, i) => (
     <Nivel

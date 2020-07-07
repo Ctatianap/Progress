@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../contexto";
 
 const Registro = () => {
-  const { progresoNivel, setProgresoNivel } = useContext(Context);
+  const { progresoNivel } = useContext(Context);
 
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
@@ -13,11 +13,11 @@ const Registro = () => {
   const [registrado, setRegistrado] = useState(false);
   const [validar, setValidar] = useState(1);
   const [info, setInfo] = useState("");
-  const [correcto, setCorrecto] = useState(null);
+  const [correcto] = useState(null);
   const [existe, setExiste] = useState(null);
   const [loading, setLoading] = useState(true);
   const [completo, setCompleto] = useState(false);
-  const [correosApi, setCorreosApi] = useState([]);
+  const [correosApi] = useState([]);
   useEffect(() => {
     axios
       .get("https://finanzas-personales-api.herokuapp.com/users")
