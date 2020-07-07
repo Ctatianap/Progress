@@ -24,9 +24,7 @@ const Registro = () => {
       .then((res) => {
         setInfo(res.data);
         setLoading(false);
-        res.data.map((i) => {
-          correosApi.push(i.correo);
-        });
+        res.data.map((i) => correosApi.push(i.correo));
       })
       .catch((err) => console.log(err));
   }, [correosApi, validar]);
