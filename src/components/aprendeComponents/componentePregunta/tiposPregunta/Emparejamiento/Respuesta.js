@@ -2,7 +2,8 @@ import React from "react";
 import { useDrag } from "react-dnd";
 
 const Respuesta = ({ onDrag, texto }) => {
-  const [{}, drag] = useDrag({
+  // eslint-disable-next-line no-unused-vars
+  const [_, drag] = useDrag({
     item: { type: "1" },
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),
